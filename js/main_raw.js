@@ -418,7 +418,7 @@ function start() {
         wss = "wss://";
     }
 
-    let sockAddr = document.getElementById('sockAddr').getAttribute("value");
+    let sockAddr = document.getElementById('sockAddr').value;
     // socket = new WebSocket(wss + "10.13.248.16:3325", 'amoProto');
     socket = new WebSocket(wss + sockAddr, 'amoProto');
 
